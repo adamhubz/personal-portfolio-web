@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta char set="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Adam Hubert</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/20789130f2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- --------------------header-------------------- -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="assets/img/logo.png" class="logo">
+            
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+<!-- --------------------home-------------------- -->
+<div id="home">
+    <div class="home-text">
+        <h3>Hello, I'm</h3>
+        <h1>Adam Hubert</h1>
+        <h5>A <span>Data Enthusiast</span> From Bekasi</h5>
+        <p>I'm fresh graduate based in Bekasi, and active as a job seeker <br> and learning data science from online courses.</p>
+    </div> 
+    <div class="home-img">
+        <img src="assets/img/main.png">
+    </div>
+</div>
+<!-- --------------------about-------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="assets/img/user.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Bachelor of Engineering from University of Brawijaya in 2021. Currently active as a job seeker and
+                    taking online data science courses. During college, I mastered engineering sciences such as
+                    Engineering Mathematics, Statistics and Probability and Energy. I also had organization experience
+                    which allowed me to having growth mindset and develop skills that required by working in a team or
+                    independently. I have an interest in career in data field.
+                    </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('courses')">Courses</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python, SQL, C++, HTML, CSS</li>
+                        <li><span>Machine Learning</span><br>Python (eg. scikit-learn, numpy, pandas, matplotlib, seaborn)</li>
+                        <li><span>Tools & Techniques</span><br>Data wrangling, Data cleansing, Data visualization, Data modeling, Model
+                            validation, ETL, A/B testing, Statistics, Time series, Hypothesis testing, Experimental design,
+                            OOP, Tableau, Power BI, Microsoft Office, BigQuery, Google Data Studio, Google docs, Google sheets</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="courses">
+                    <ul>
+                        <li><span>September 2022 - October 2022</span><br>Fresh Graduate Academy - Data Science</li>
+                        <li><span>January 2022 - August 2022</span><br>DataCamp - Data Science</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017 - 2021</span><br>Bachelor of Engineering from University of Brawijaya</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------portfolio-------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="assets/img/work-1.jpg">
+                <div class="layer">
+                    <h3>Customer Telco Churn Prediction App</h3>
+                    <p>Web application to predict customer churn based on customer behavior.</p>
+                    <a href="https://customer-churn-telco.up.railway.app/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/img/work-2.jpg">
+                <div class="layer">
+                    <h3>Abalone Age Prediction App</h3>
+                    <p>Web application to estimate the age of the abalone using its physical characteristics</p>
+                    <a href="https://abalone-seafood-farming.up.railway.app/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/img/work-3.png">
+                <div class="layer">
+                    <h3>Covid-19 Indonesia Dashboard</h3>
+                    <p>Dashboard to monitor covid-19 cases in Indonesia.</p>
+                    <a href="https://datastudio.google.com/reporting/e6f1c0e3-049d-408b-b531-c2ec828b0b40/page/rVj3C" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/adamhubz" target="_blank" rel="noopener noreferrer" class="btn">See more</a>
+    </div>
+</div>
+<!-- --------------------certificates-------------------- -->
+<div id="certificates">
+    <div class="container">
+        <h1 class="sub-title">My Certificates</h1>
+        <div class="certificates-list">
+            <div>
+                <a href="#">
+                    <i class="fas fa-code"></i>
+                    <h2>Data Science</h2>
+                    <p>Fresh Graduate Academy by Ministry of Communication and Information Technology</p>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.datacamp.com/certificate/DSA0010314928543" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-medal"></i>
+                    <h2>Data Scientist Associate</h2>
+                    <p>Certified by DataCamp</p>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.hackerrank.com/certificates/27c38aa85396" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-database"></i>
+                    <h2>SQL Advanced</h2>
+                    <p>Certified by HackerRank</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------contact-------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>adamhubert.wrk@gmail.com</p>
+                <p><i class="fa-brands fa-whatsapp"></i>081249700835</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/adamhubert" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/adamhubz" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.kaggle.com/adamhuberts" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-kaggle"></i></a>
+                </div>
+                <a href="assets/pdf/Adam-Hubert-CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made with <i class="fa-solid fa-heart"></i> by Adam Hubert © 2022</p>
+    </div>
+</div>
+
+<!-- --------------------script-------------------- -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script type="text/javascript" src="assets/js/script.js"></script>
+
+</body>
+</html>
